@@ -3,7 +3,7 @@ import FItems from './FItems/FItems'
 import "./Footer.css"
 
 
-const Foot = ["Location","About Us","Contacts"];
+const Foot = ['Address','Products','Latest Articles'];
 
 const Footer = () => {
     return (
@@ -12,7 +12,7 @@ const Footer = () => {
                 {
                 Foot.map((h,l)=>{
                     return(
-                        <FItems key={l} Ft={h} />
+                        <FItems key={l} ft={h} />
                     )
                 })
                }

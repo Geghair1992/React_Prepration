@@ -4,7 +4,24 @@ import "./Navigation.css"
 
 
 
-const list=["Home","Products","About Us","Contact"];
+const list=[
+    {
+        name:'Home',
+        link:'/',
+    },     
+    {
+       name:'Products',
+       link:'/products',
+    },
+    {
+       name:'About Us',
+       link:'/aboutus',
+    },
+    {
+        name:'Contact',
+        link:'/contact',
+    },
+];
 
 const Navigation = () => {
     return (
@@ -13,7 +30,7 @@ const Navigation = () => {
             {
                 list.map((n,i)=>{
                     return(
-                        <Items key={i} titleHead={n}  />
+                        <Items key={i} title={n.name} url={n.link}  />
                     )
                 })
             }

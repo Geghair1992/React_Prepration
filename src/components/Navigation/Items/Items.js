@@ -4,7 +4,7 @@ const Items = (props) => {
     return (
         
             <li>
-                 <a href="/">{props.titleHead}</a>
+                 <a href={props.url}>{props.title}</a>
             </li>
         
     );

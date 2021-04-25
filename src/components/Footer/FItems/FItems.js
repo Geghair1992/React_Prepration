@@ -3,7 +3,7 @@ import React from 'react'
 const FItems = (props) => {
     return (
         <li>
-            <a href="/">{props.Ft}</a>
+            <a href="http://google.com">{props.ft}</a>
         </li>
             
         
